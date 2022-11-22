@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  html{
+    box-sizing: border-box;
+}
+  *,*::before, *::after{
+    box-sizing: inherit;
+}
+  body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight:normal;
+    color: rgb(0, 0, 0);
+}
+
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;   
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+  
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.header_atem{
+    margin-right: 82px;
+}
+.header_atem:last-child{
+    margin-right: 0px;
+}
+.header_link{
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+}
+.header_link:hover, .header_link:focus,.header_link:hover{
+ opacity: .75; 
+}
+.intro{
+  min-height: 100vh;
+  background:url(/travel/img/intro-bg.jpg ) no-repeat center;
+  background-size: cover;
+  padding-top: 263px;
+  
+}
+.intro_title{
+  max-width: 619px;
+  font-size: 50px;
+  line-height: 60 ;
+  line-height: 100%;
+  margin-bottom: 22px;
+  color: white;
+}
+.intro_subyitle{
+   color: white;
+   font-size: 16px;
+   line-height: 24px; 
+   max-width: 546px;
+   margin-bottom: 59px;
+}
+.search-form_info{
+  display: flex;
+  flex-wrap: wrap;
+}
+.search-form_field{
+  width: 297px;
+  background:transparent url(/travel/img/svg/Oval.svg)no-repeat left 9px;
+  background-size: 16px;
+  border: 0;
+  border-bottom: 2px Solid #BFC0C5;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.search-form_field::placeholder{
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.search-form_submit{
+  padding: 15px 39px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: white;
+  background: #1B7DFF;
+  border: 0;  
+}
+.search-form_submit:hover,.search-form_focus,.search-form_form-activ{
+  background: #084aa0;
+}
+.benefits_wrap{
+  max-width: 1262px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+  
+}
+.Benefits_title{
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 93px 100px 520px;
+}
+.Benefits_cards{
+  height: 30vh;
+}
