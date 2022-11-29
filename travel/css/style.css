@@ -88,7 +88,7 @@ table {
     margin: 0 auto;   
 }
 .header{
-    position: fixed;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -126,21 +126,21 @@ table {
   background:url(/travel/img/intro-bg.jpg ) no-repeat center;
   background-size: cover;
   padding-top: 263px;
-  
+  padding-bottom: 223px;
 }
 .intro_title{
   max-width: 619px;
   font-size: 50px;
   line-height: 60 ;
   line-height: 100%;
-  margin-bottom: 22px;
   color: white;
+  margin-bottom: 22px;
 }
 .intro_subyitle{
-   color: white;
-   font-size: 16px;
-   line-height: 24px; 
    max-width: 546px;
+   color: rgb(255, 255, 255);
+   font-size: 16px;
+   line-height: 24px;    
    margin-bottom: 59px;
 }
 .search-form_info{
@@ -170,29 +170,51 @@ table {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 500;
-  line-height: 29px;
-  letter-spacing: 0px;
   text-align: left;
   color: white;
   background: #1B7DFF;
-  border: 0;  
+  border: 753px auto;  
+  
 }
 .search-form_submit:hover,.search-form_focus,.search-form_form-activ{
   background: #084aa0;
+ 
 }
+
+.benefits{
+  margin-bottom: 131px;
+}
+
 .benefits_wrap{
-  max-width: 1262px;
-  background-color: white;
+  max-width: 1262px ;  
+  background-color: rgb(255, 255, 255);
+  /* box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993); */
+  position:relative;
+  top: 153px ;
   margin: 0 auto;
-  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
-  
-}
-.Benefits_title{
+  }
+
+.benefits_title{
+  width: 100%;
   font-weight: 500;
   font-size: 35px;
   line-height: 42px;
-  padding: 93px 100px 520px;
+  padding: 95px 100px 88px 89px;
+  position:absolute ;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: #fff;
 }
-.Benefits_cards{
+.benefits_cards{
   height: 30vh;
+} 
+/* class="Today" */
+
+.Today_wrap{
+  color: rgb(0, 0, 0);
+}
+.Todey_carts{
+  display: grid;
+  grid-template-columns: 441px 437px 547px 459px 456px 426px;
 }
