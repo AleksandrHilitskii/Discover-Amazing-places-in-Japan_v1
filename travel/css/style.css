@@ -214,7 +214,75 @@ table {
 .Today_wrap{
   color: rgb(0, 0, 0);
 }
+
 .Todey_carts{
   display: grid;
-  grid-template-columns: 441px 437px 547px 459px 456px 426px;
+  height: 1192px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+/*
+1. задать размер для блока с картинкой
+2. задать размер для нижней полоски
+3. сделать бэкграунд для полоски(добавить для каждой карточки индивидуальный класс)
+4. расположить полоску внизу(для расположения полоски внизу, использовать свойство display: flex)
+*/
+
+.card{
+  width: 392px;
+  height: 567px;
+  /* background-color: #d6dfeb; */
+  
+}
+
+.picture{
+  width: 386px;
+  height: 377px;
+  display: flex;
+  align-items: flex-end
+}
+.picture_NAGOYA{
+  background:no-repeat url("../img/nagoya.png");
+}
+.picture_NIIGATA{
+  background:no-repeat url("../img/nigata.png")
+}
+.picture_OSAKA{
+  background:no-repeat url("../img/osaka.png")
+}
+.picture_SAITAMA{
+  background:no-repeat url("../img/saitama.png")
+}
+.picture_UENO{
+  background:no-repeat url("../img/ueno.png")
+}
+.picture_SHIBUYA{
+  background:no-repeat url("../img/shibuya.png")
+}
+.picture_info{
+  height: 55px;
+  width: 379px;
+  background-color: rgba(21, 24, 36, 0.6);
+  display: flex;
+  flex-wrap: ;
+}
+
+.picture_bottom_text{
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center ;
+}
+
+.info{
+
+}
+
+.like_blok{
+
+}
+
+.comments_blok{
+
 }
