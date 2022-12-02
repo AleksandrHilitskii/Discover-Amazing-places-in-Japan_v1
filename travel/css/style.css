@@ -123,7 +123,7 @@ table {
 }
 .intro{
   min-height: 100vh;
-  background:url(/travel/img/intro-bg.jpg ) no-repeat center;
+  background:url(/img/intro-bg.jpg ) no-repeat center;
   background-size: cover;
   padding-top: 263px;
   padding-bottom: 223px;
@@ -146,6 +146,7 @@ table {
 .search-form_info{
   display: flex;
   flex-wrap: wrap;
+  
 }
 .search-form_field{
   width: 297px;
@@ -172,9 +173,9 @@ table {
   font-weight: 500;
   text-align: left;
   color: white;
-  background: #1B7DFF;
-  border: 753px auto;  
-  
+  background: #1b6ad3;
+  border: 753px auto; 
+  border-width:0px;
 }
 .search-form_submit:hover,.search-form_focus,.search-form_form-activ{
   background: #084aa0;
@@ -187,11 +188,12 @@ table {
 
 .benefits_wrap{
   max-width: 1262px ;  
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(31, 202, 151);
   /* box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993); */
   position:relative;
   top: 153px ;
   margin: 0 auto;
+  
   }
 
 .benefits_title{
@@ -199,31 +201,39 @@ table {
   font-weight: 500;
   font-size: 35px;
   line-height: 42px;
-  padding: 95px 100px 88px 89px;
-  position:absolute ;
+  padding: 95px 100px 88px 89px;  
   top: 0;
   left: 0;
   transform: translateY(-100%);
-  background-color: #fff;
+  background-color: rgb(31, 202, 151);
+ 
+  
 }
 .benefits_cards{
   height: 30vh;
-} 
+ 
+}
 /* class="Today" */
 
 .Today_wrap{
   color: rgb(0, 0, 0);  
- 
+  text-align: center;
+  
 }
 
 .Todey_carts{
-  display: grid;  
-  height: 1192px;
+  display: grid;
+  height: 1298px;
+  width: 1280px;
+  left: 106px; 
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  margin: 0 20px 0 0;  
-  
+  grid-template-rows: repeat(2, 1fr); 
+  top: 3284px;
+  margin: auto ;
 }
+.jump_off{
+  text-align: left;
+  }
 
 
 /*
@@ -234,16 +244,16 @@ table {
 */
 
 .card{
-  width: 392px;
-  height: 567px;
+  width: 400px;
+  /* height: 567px; */
     
 }
 
 .picture{
-  width: 386px;
-  height: 377px;
-  display: flex;
-  align-items: flex-end
+  width: 392px;
+  height: 380px;
+  /* display: flex;
+  align-items: end; */
 }
 .picture_nagava{
   background:no-repeat url("../img/nagoya.png");
@@ -264,16 +274,15 @@ table {
   background:no-repeat url("../img/shibuya.png")
 }
 .picture_info{
-  height: 55px;
-  width: 379px;
-  background-color: rgba(21, 24, 36, 0.6); 
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
 }
 
 .picture_bottom_text{
   color: rgb(255, 255, 255);
-  display: flex;
-  align-items: center ;
-  
+    
 }
 
 .info{
@@ -282,8 +291,24 @@ table {
 
 .like_blok{
 
+
 }
 
 .comments_blok{
+  
+  }
 
+.jump_off{
+  
+}
+ 
+.see{
+  height: 42px;
+  width: 118px;
+  text-transform: uppercase;
+  font-weight: 400; 
+  color: white;
+  background: #006DFE;  
+  border-width:0px;
+  
 }
