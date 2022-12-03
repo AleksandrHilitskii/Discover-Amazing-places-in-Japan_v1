@@ -188,8 +188,7 @@ table {
 
 .benefits_wrap{
   max-width: 1262px ;  
-  background-color: rgb(31, 202, 151);
-  /* box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993); */
+  background-color: rgb(224, 240, 235);
   position:relative;
   top: 153px ;
   margin: 0 auto;
@@ -205,76 +204,98 @@ table {
   top: 0;
   left: 0;
   transform: translateY(-100%);
-  background-color: rgb(31, 202, 151);
- 
+  background-color: rgb(224, 240, 235);
   
 }
+
 .benefits_cards{
   height: 30vh;
  
 }
-/* class="Today" */
 
-.Today_wrap{
-  color: rgb(0, 0, 0);  
-  text-align: center;
-  
+.Today{
+margin: 380px 0 0 0;
 }
 
-.Todey_carts{
+.today_wrap{
+  color: rgb(0, 0, 0);  
+  text-align: center;  
+}
+
+.today_title{
+ 
+  font-size: 35px;  
+  line-height: 100%;
+  color: rgb(10, 10, 10);
+  margin: 0 845px 65px 0;
+}
+
+.todey_carts{
   display: grid;
   height: 1298px;
-  width: 1280px;
+  width: 1190px;
   left: 106px; 
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); 
   top: 3284px;
   margin: auto ;
 }
+
 .jump_off{
   text-align: left;
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight:normal;
+  color: rgb(0, 0, 0);
   }
 
 
-/*
-1. задать размер для блока с картинкой
+
+/* 1. задать размер для блока с картинкой
 2. задать размер для нижней полоски
 3. сделать бэкграунд для полоски(добавить для каждой карточки индивидуальный класс)
-4. расположить полоску внизу(для расположения полоски внизу, использовать свойство display: flex)
-*/
+4. расположить полоску внизу(для расположения полоски внизу, использовать свойство display: flex) */
+
 
 .card{
   width: 400px;
-  /* height: 567px; */
-    
+  display: flex;
+  flex-direction: column;  
 }
 
 .picture{
   width: 392px;
   height: 380px;
-  /* display: flex;
-  align-items: end; */
 }
+
 .picture_nagava{
   background:no-repeat url("../img/nagoya.png");
 }
+
 .picture_niigata{
   background:no-repeat url("../img/nigata.png")
 }
+
 .picture_osaka{
   background:no-repeat url("../img/osaka.png")
 }
+
 .picture_saitama{
   background:no-repeat url("../img/saitama.png")
 }
+
 .picture_ueno{
   background:no-repeat url("../img/ueno.png")
 }
+
 .picture_shibuya{
   background:no-repeat url("../img/shibuya.png")
 }
-.picture_info{
 
+.picture_info{
+ 
   display: flex;
   justify-content: space-around;
   align-items: center ;
@@ -282,7 +303,7 @@ table {
 
 .picture_bottom_text{
   color: rgb(255, 255, 255);
-    
+  margin: 342px 0 342px 0 ;
 }
 
 .info{
@@ -299,7 +320,7 @@ table {
   }
 
 .jump_off{
-  
+  margin: 40px 0 40px 0;  
 }
  
 .see{
@@ -309,6 +330,8 @@ table {
   font-weight: 400; 
   color: white;
   background: #006DFE;  
-  border-width:0px;
-  
+  border-width:0px;  
+}
+.see:hover,.search-form_focus,.search-form_form-activ{
+ background-color: #084aa0;
 }
