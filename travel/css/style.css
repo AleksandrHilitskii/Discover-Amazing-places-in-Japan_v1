@@ -150,7 +150,7 @@ table {
 }
 .search-form_field{
   width: 297px;
-  background:transparent url(/travel/img/svg/Oval.svg)no-repeat left 9px;
+  background:transparent url(/img/svg/Oval.svg)no-repeat left 9px;
   background-size: 16px;
   border: 0;
   border-bottom: 2px Solid #BFC0C5;
@@ -176,11 +176,13 @@ table {
   background: #1b6ad3;
   border: 753px auto; 
   border-width:0px;
+  border-radius: 4px;
 }
 .search-form_submit:hover,.search-form_focus,.search-form_form-activ{
   background: #084aa0;
  
 }
+/* .benefits */
 
 .benefits{
   margin-bottom: 131px;
@@ -188,11 +190,10 @@ table {
 
 .benefits_wrap{
   max-width: 1262px ;  
-  background-color: rgb(224, 240, 235);
+  background-color:white;
   position:relative;
   top: 153px ;
-  margin: 0 auto;
-  
+  margin: 0 auto; 
   }
 
 .benefits_title{
@@ -204,17 +205,59 @@ table {
   top: 0;
   left: 0;
   transform: translateY(-100%);
-  background-color: rgb(224, 240, 235);
+  background-color: white;
   
 }
 
 .benefits_cards{
   height: 30vh;
- 
+  display: grid;
+  grid-template-columns: repeat(3,1fr); 
+}
+.benefits_card{
+  height: 280px;
+  width: 317px;
 }
 
-.Today{
-margin: 380px 0 0 0;
+.icon {
+margin:0 0 33px 100px;
+}
+.header_benefits{
+  margin:0 0 33px 100px;
+}
+.text_cart{
+  margin: 26px 0 0 100px;
+}
+.more{
+ margin: 40px 26px 0 0;
+  height: 24px;
+  width: 120px;  
+  border-radius: nullpx;
+  color: black;
+  border-width:0px;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* .benefits_end */
+
+/* .Today */
+.today{
+margin: 380px auto;
+height: 1298px;
+width: 1280px;
+left: 80px;
+top: 3315px;
+
+
 }
 
 .today_wrap{
@@ -330,7 +373,8 @@ margin: 380px 0 0 0;
   font-weight: 400; 
   color: white;
   background: #006DFE;  
-  border-width:0px;  
+  border-width:0px;
+  border-radius: 4px;
 }
 .see:hover,.search-form_focus,.search-form_form-activ{
  background-color: #084aa0;
