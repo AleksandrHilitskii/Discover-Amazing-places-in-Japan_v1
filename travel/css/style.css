@@ -1,0 +1,381 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* lato-regular - latin */
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* lato-700 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* lato-900 - latin */
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: local(''),
+         url('../fonts/lato-v23-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/lato-v23-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  html{
+    box-sizing: border-box;
+}
+  *,*::before, *::after{
+    box-sizing: inherit;
+}
+  body{
+    font-family: 'Lato';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight:normal;
+    color: rgb(0, 0, 0);
+}
+
+.wrapper{
+    max-width: 1060px;
+    margin: 0 auto;   
+}
+.header{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+  
+.header_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+.header_list{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.header_atem{
+    margin-right: 82px;
+}
+.header_atem:last-child{
+    margin-right: 0px;
+}
+.header_link{
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  text-decoration: none;
+}
+.header_link:hover, .header_link:focus,.header_link:hover{
+ opacity: .75; 
+}
+.intro{
+  min-height: 100vh;
+  background:url(/img/intro-bg.jpg ) no-repeat center;
+  background-size: cover;
+  padding-top: 263px;
+  padding-bottom: 223px;
+}
+.intro_title{
+  max-width: 619px;
+  font-size: 50px;
+  line-height: 60 ;
+  line-height: 100%;
+  color: white;
+  margin-bottom: 22px;
+}
+.intro_subyitle{
+   max-width: 546px;
+   color: rgb(255, 255, 255);
+   font-size: 16px;
+   line-height: 24px;    
+   margin-bottom: 59px;
+}
+.search-form_info{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.search-form_field{
+  width: 297px;
+  background:transparent url(/img/svg/Oval.svg)no-repeat left 9px;
+  background-size: 16px;
+  border: 0;
+  border-bottom: 2px Solid #BFC0C5;
+  margin-right: 60px;
+  padding-left: 43px;
+  padding-bottom: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.search-form_field::placeholder{
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}
+.search-form_submit{
+  padding: 15px 39px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  color: white;
+  background: #1b6ad3;
+  border: 753px auto; 
+  border-width:0px;
+  border-radius: 4px;
+}
+.search-form_submit:hover,.search-form_focus,.search-form_form-activ{
+  background: #084aa0;
+ 
+}
+/* .benefits */
+
+.benefits{
+  margin-bottom: 131px;
+}
+
+.benefits_wrap{
+  max-width: 1262px ;  
+  background-color:white;
+  position:relative;
+  top: 153px ;
+  margin: 0 auto; 
+  }
+
+.benefits_title{
+  width: 100%;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 95px 100px 88px 89px;  
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  background-color: white;
+  
+}
+
+.benefits_cards{
+  height: 30vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr); 
+}
+.benefits_card{
+  height: 280px;
+  width: 317px;
+}
+
+.icon {
+margin:0 0 33px 100px;
+}
+.header_benefits{
+  margin:0 0 33px 100px;
+}
+.text_cart{
+  margin: 26px 0 0 100px;
+}
+.more{
+ margin: 40px 26px 0 0;
+  height: 24px;
+  width: 120px;  
+  border-radius: nullpx;
+  color: black;
+  border-width:0px;
+  background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* .benefits_end */
+
+/* .Today */
+.today{
+margin: 380px auto;
+height: 1298px;
+width: 1280px;
+left: 80px;
+top: 3315px;
+
+
+}
+
+.today_wrap{
+  color: rgb(0, 0, 0);  
+  text-align: center;  
+}
+
+.today_title{
+ 
+  font-size: 35px;  
+  line-height: 100%;
+  color: rgb(10, 10, 10);
+  margin: 0 845px 65px 0;
+}
+
+.todey_carts{
+  display: grid;
+  height: 1298px;
+  width: 1190px;
+  left: 106px; 
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr); 
+  top: 3284px;
+  margin: auto ;
+}
+
+.jump_off{
+  text-align: left;
+  font-family: 'Lato';
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight:normal;
+  color: rgb(0, 0, 0);
+  }
+
+
+
+/* 1. задать размер для блока с картинкой
+2. задать размер для нижней полоски
+3. сделать бэкграунд для полоски(добавить для каждой карточки индивидуальный класс)
+4. расположить полоску внизу(для расположения полоски внизу, использовать свойство display: flex) */
+
+
+.card{
+  width: 400px;
+  display: flex;
+  flex-direction: column;  
+}
+
+.picture{
+  width: 392px;
+  height: 380px;
+}
+
+.picture_nagava{
+  background:no-repeat url("../img/nagoya.png");
+}
+
+.picture_niigata{
+  background:no-repeat url("../img/nigata.png")
+}
+
+.picture_osaka{
+  background:no-repeat url("../img/osaka.png")
+}
+
+.picture_saitama{
+  background:no-repeat url("../img/saitama.png")
+}
+
+.picture_ueno{
+  background:no-repeat url("../img/ueno.png")
+}
+
+.picture_shibuya{
+  background:no-repeat url("../img/shibuya.png")
+}
+
+.picture_info{
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+}
+
+.picture_bottom_text{
+  color: rgb(255, 255, 255);
+  margin: 342px 0 342px 0 ;
+}
+
+.info{
+
+}
+
+.like_blok{
+
+
+}
+
+.comments_blok{
+  
+  }
+
+.jump_off{
+  margin: 40px 0 40px 0;  
+}
+ 
+.see{
+  height: 42px;
+  width: 118px;
+  text-transform: uppercase;
+  font-weight: 400; 
+  color: white;
+  background: #006DFE;  
+  border-width:0px;
+  border-radius: 4px;
+}
+.see:hover,.search-form_focus,.search-form_form-activ{
+ background-color: #084aa0;
+}
